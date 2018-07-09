@@ -1,16 +1,20 @@
-<!--        Enter three integers to receive a sum, average, product, lowest integer, and highest integer-->
-            <form>    
-            Integer one: <input type="number" name="one" /><br>  
-            Integer two: <input type="number" name="two"/><br>   
-            Integer three: <input type="number" name="three"/><br><br>
-            <input type="button" value="Submit" onclick="sum_int(); average_int(); product_int(); smallest_int(); largest_int();"/>
-            <input type="reset" value="Reset"/><br><br>    
+<!DOCTYPE html>
+<html>
+<head>
+</head>    
+<body>
+    <form>    
+        Integer one: <input type="number" name="one" /><br>  
+        Integer two: <input type="number" name="two"/><br>   
+        Integer three: <input type="number" name="three"/><br><br>            
+        <input type="button" value="Submit" onclick="sum_int(); average_int(); product_int(); smallest_int(); largest_int();"/>
+        <input type="reset" value="Reset"/><br><br>    
             Sum: <input type="number" name="sum" readonly/><br> 
             Average: <input type="number" name="average" readonly/><br>    
             Product: <input type="number" name="product" readonly/><br>
             Smallest: <input type="number" name="smallest" readonly/><br>  
             Largest: <input type="number" name="largest" readonly/>    
-            </form>
+    </form>
         <script>
             function sum_int(){
                 let one = document.getElementsByName("one")[0].value;
@@ -39,7 +43,7 @@
             function smallest_int(){
                 let one = document.getElementsByName("one")[0].value;
                 let two = document.getElementsByName("two")[0].value;
-                let three = document.getElementsByName("three")[0].value;  
+                let three = document.getElementsByName("three")[0].value; 
                 let smallest = Math.min(Number(one), Number(two), Number(three));
                 document.getElementsByName("smallest")[0].value = smallest;
             }    
@@ -52,3 +56,5 @@
                 document.getElementsByName("largest")[0].value = largest;
             }    
         </script>
+   </body> 
+</html>    
