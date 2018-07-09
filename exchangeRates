@@ -8,7 +8,7 @@
     #display, #exchangerates{text-align: center;padding: 10px;border: 1px solid;width: 60%;margin: 30px auto;}
     #exchangerates{padding: 20px;display: none;}
 </style> 
-<head>
+</head>
 
                 <p id="display">Click to show the 'Monetary Exchange Rates'</p>
                   <div id="exchangerates">     
