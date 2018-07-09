@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>  
+<body style="text-align: right">    
 <!--            Enter five integers and receive the number of negatives, positives and zeros with Jquery -->           
             <form>    
                 Integer one: <input type="number" name="one" /><br>  
@@ -64,7 +69,6 @@
                 else{
                     five = 0;
                 }
-
                 let negatives = Number(one) + Number(two) + Number(three) + Number(four) + Number(five);
                 document.getElementsByName("negatives")[0].value = negatives;
             }
@@ -110,11 +114,9 @@
                 else{
                     five = 0;
                 }
-
                 let positives = Number(one) + Number(two) + Number(three) + Number(four) + Number(five);
                 document.getElementsByName("positives")[0].value = positives;
             }
-
             function zero_int(){
                 let one = document.getElementsByName("one")[0].value;
                 let two = document.getElementsByName("two")[0].value;
@@ -160,4 +162,5 @@
                 document.getElementsByName("zeros")[0].value = zeros;
             }
         </script>
-    </div>
+    </body> 
+</html>  
