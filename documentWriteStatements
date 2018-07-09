@@ -1,7 +1,7 @@
 #Document Write Statements
         <script>
-        document.write("<span id='ab'>ab ");
-        document.write("<span id='twelve'>12 ");
-        document.write("<span id='thirtyfour'>34 ");    
+        document.write("ab ");
+        document.write("12 ");
+        document.write("34 ");    
         </script> 
    
