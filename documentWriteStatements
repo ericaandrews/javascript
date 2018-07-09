@@ -1,4 +1,4 @@
-#Document Write Statements
+<!--        Document Write Statements-->
         <script>
         document.write("ab ");
         document.write("12 ");
