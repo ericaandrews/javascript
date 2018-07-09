@@ -14,11 +14,11 @@
                     
 
 <!--                    Date formatted as 'Month Day, Year'-->
-                    <script>
-                        var d = new Date(); 
-                        var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-                        document.getElementById("date").innerHTML = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
-                    </script>
+                <script>
+                   var d = new Date(); 
+                   var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                   document.getElementById("date").innerHTML = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+                </script>
                     
 <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values:</p>  
                 <table id="table">
