@@ -22,7 +22,7 @@
                     var floatRoundedHundredth = Number(float).toFixed(2);
                     var floatRoundedThousandth = Number(float).toFixed(3);
                     var floatMax = Number(float).toFixed(4);
-                    if(!(float >= 0)){
+                    if(!(float > 0)){
                         alert("Enter a floating-point number greater than 0");
                         let float = document.getElementById("float").value = " ";
                     }else if(float < floatMax){
