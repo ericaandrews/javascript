@@ -24,55 +24,58 @@ a:hover {
 }    
 </style>    
 </head>
-<!--This webpage contains a script that displays a top navigation bar containing a link to Homework 1 and five other links that will be to the cover page for each Homework 2 - Homework 6. When you mouseover any of these other links, a drop-down menu that contains the links of homework parts (part 1, part 2, etc...) is displayed.    -->
+<!--This webpage contains a script that displays a top navigation bar containing a 
+link to 'ONE' and five other links that will be to the cover page for each 
+'TWO' - 'SIX'. When you mouseover any of these other links, a drop-down 
+menu that contains the links of parts (part 1, part 2, etc...) is displayed.    -->
 <body>
     <br><br><br>
         <ul id="nav" style="text-align: center">   
             <div class="dropdown">
-             <a href="" id="navparts">HOMEWORK ONE -</a>    
+             <a href="" id="navpart_one">ONE -</a>    
             </div>    
             <div class="dropdown">
-             <a href="" id="navparts">HOMEWORK TWO -</a>
+             <a href="" id="navpart_two">TWO -</a>
             <div class="dropdown-content">
-                <a href="" id="navpartss">Part 1 </a><br><br>
-                <a href="" id="navpartsss">Part 2 </a><br><br>
-                <a href="" id="navpartssss">Part 3 </a><br><br>
-                <a href="" id="navpartsssss">Part 4 </a><br><br>
-                <a href="" id="navpartssssss">Extra Credit</a>
+                <a href="" id="two_partone">Part 1 </a><br><br>
+                <a href="" id="two_parttwo">Part 2 </a><br><br>
+                <a href="" id="two_partthree">Part 3 </a><br><br>
+                <a href="" id="two_partfour">Part 4 </a><br><br>
+                <a href="" id="two_partfive">Part 5</a>
             </div>
             </div> 
             <div class="dropdown">
-             <a href="" id="navparts">HOMEWORK THREE -</a>
+             <a href="" id="navpart_three">THREE -</a>
             <div class="dropdown-content">
-                <a href="" id="navpartss">Part 1 </a><br><br>
-                <a href="" id="navpartsss">Part 2 </a><br><br>
-                <a href="" id="navpartssss">Part 3 </a><br><br>
-                <a href="" id="navpartsssss">Part 4</a><br><br>
+                <a href="" id="three_partone">Part 1 </a><br><br>
+                <a href="" id="three_parttwo">Part 2 </a><br><br>
+                <a href="" id="three_partthree">Part 3 </a><br><br>
+                <a href="" id="three_partfour">Part 4</a><br><br>
             </div>
             </div> 
             <div class="dropdown">
-             <a href="" id="navparts">HOMEWORK FOUR -</a>
+             <a href="" id="navpart_four">FOUR -</a>
             <div class="dropdown-content">                
-                <a href="" id="navpartss">Part 1 </a><br><br>
-                <a href="" id="navpartsss">Part 2 </a><br><br>
-                <a href="" id="navpartssss">Part 3 </a><br><br>
-                <a href="" id="navpartsssss">Extra Credit</a><br><br>
+                <a href="" id="four_partone">Part 1 </a><br><br>
+                <a href="" id="four_parttwo">Part 2 </a><br><br>
+                <a href="" id="four_partthree">Part 3 </a><br><br>
+                <a href="" id="four_partfour">Part 4</a><br><br>
             </div>  
             </div> 
             <div class="dropdown">
-             <a href="" id="navparts">HOMEWORK FIVE -</a>
+             <a href="" id="navpart_five">FIVE -</a>
             <div class="dropdown-content">                
-                <a href="" id="navpartss">Part 1 </a><br><br>
-                <a href="" id="navpartsss">Part 2 </a><br><br>
-                <a href="" id="navpartssss">Part 3</a>
+                <a href="" id="five_partone">Part 1 </a><br><br>
+                <a href="" id="five_parttwo">Part 2 </a><br><br>
+                <a href="" id="five_partthree">Part 3</a>
             </div>  
             </div>
             <div class="dropdown">
-             <a href="" id="navparts">HOMEWORK SIX</a>    
+             <a href="" id="navpart_six">SIX</a>    
             <div class="dropdown-content">                
-                <a href="" id="navpartss">Part 1 </a><br><br>
-                <a href="" id="navpartsss">Part 2 </a><br><br>
-                <a href="" id="navpartssss">Part 3</a>
+                <a href="" id="six_partone">Part 1 </a><br><br>
+                <a href="" id="six_parttwo">Part 2 </a><br><br>
+                <a href="" id="six_partthree">Part 3</a>
             </div>  
         </div>     
     </ul>
