@@ -1,29 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>  
-<style>
-    form{width: 100%; margin: 0 auto; text-align: left;}
-    table{width: 100%;}
-    table, th, td{border: 1px solid black; border-collapse: collapse; font-size: 8pt; font-weight: bold;}
-    th, td{padding: 10px; text-align: left;}
-    tr{background-color: #fff;}
-    #button, #content{padding: 5px; text-align: center; border: solid 1px #ddd;}
-    #content{padding: 50px; display: none; width: 80%;}
-    input{width:100%; }
-    #StateAbbr, #StateName, #Capital, #Population{font-weight: bold;}
-</style>
-</head>
-<body>
-    <p style="text-align: center">This webpage enables the user to enter a state name &#40;full or abbreviated&#41; and have the State Name, State Capital, and population appear in seperate form text fields of the page.</p>
-            <div id="button"><button>State Info</button></div>
-            <form id="content">
-            <p>Enter only State Abbreviations or State Names from the following list:<br><br>AL : Alabama<br>AK : Alaska<br>AZ : Arizona<br>AR : Arkansas<br>CA : California<br>CO : Colorado<br>&#40;lower or upper case is ok&#41;</p>    
-             <table>         
-              <tr><th><input id="StateAbbr" readonly></th><th><input id="StateName" readonly></th><th><input id="Capital" readonly></th><th><input id="Population" readonly></th></tr>
-                 <tr id="state"><td><input id="stateAbbr">Enter State Abbr Here</td><td><input id="stateName">Enter State Name Here</td><td><input id="capital" readonly></td><td><input id="population" readonly></td></tr> 
-                 <tr><td colspan="4"><button type="button" onclick="stateInfo()">Submit</button><button type="reset">Reset</button><br></td></tr> 
-             </table>
-            </form>
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>  
+// <style>
+//     form{width: 100%; margin: 0 auto; text-align: left;}
+//     table{width: 100%;}
+//     table, th, td{border: 1px solid black; border-collapse: collapse; font-size: 8pt; font-weight: bold;}
+//     th, td{padding: 10px; text-align: left;}
+//     tr{background-color: #fff;}
+//     #button, #content{padding: 5px; text-align: center; border: solid 1px #ddd;}
+//     #content{padding: 50px; display: none; width: 80%;}
+//     input{width:100%; }
+//     #StateAbbr, #StateName, #Capital, #Population{font-weight: bold;}
+// </style>
+// </head>
+// <body>
+//     <p style="text-align: center">This webpage enables the user to enter a state name &#40;full or abbreviated&#41; and have the State Name, State Capital, and population appear in seperate form text fields of the page.</p>
+//             <div id="button"><button>State Info</button></div>
+//             <form id="content">
+//             <p>Enter only State Abbreviations or State Names from the following list:<br><br>AL : Alabama<br>AK : Alaska<br>AZ : Arizona<br>AR : Arkansas<br>CA : California<br>CO : Colorado<br>&#40;lower or upper case is ok&#41;</p>    
+//              <table>         
+//               <tr><th><input id="StateAbbr" readonly></th><th><input id="StateName" readonly></th><th><input id="Capital" readonly></th><th><input id="Population" readonly></th></tr>
+//                  <tr id="state"><td><input id="stateAbbr">Enter State Abbr Here</td><td><input id="stateName">Enter State Name Here</td><td><input id="capital" readonly></td><td><input id="population" readonly></td></tr> 
+//                  <tr><td colspan="4"><button type="button" onclick="stateInfo()">Submit</button><button type="reset">Reset</button><br></td></tr> 
+//              </table>
+//             </form>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script> 
                 $(document).ready(function(){
@@ -192,5 +192,5 @@
                 document.getElementById("population").value = a[1][4];       
                 }       
         </script>    
-    </body>    
-</html>
+//     </body>    
+// </html>
