@@ -1,9 +1,11 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>   
 </head>
-<!--This webpage allows the user to select a page layout and formatting through the user of the className property. The user may choose at least three form elements from among radio buttons, select items, checkboxes, and buttons to allow the user to change the background color, font size, font family, font style, and font weight.    -->
-<!-- <body id="body">
+<!-- This webpage allows the user to select a page layout and formatting through the user of the className property. 
+The user may choose at least three form elements from among radio buttons, select items, checkboxes, and buttons to 
+allow the user to change the background color, font size, font family, font style, and font weight.    -->
+       <body id="body">
         <form id="myForm" action="#" onclick="return myfunction(this)">
             <p>Select a background-color: </p>    
              <input type="radio" name="backgroundcolor" value="blue"> Blue<br>
@@ -38,7 +40,7 @@
              <button id="ligherweight" onclick="lighterweight(this)">Lighter</button>   
              <button id="boldweight" onclick="boldweight(this)">Bold</button>   
              <button id="bolderweight" onclick="bolderweight(this)">Bolder</button><br><br><br> 
-             <input type="reset" onClick="window.location.reload()" value="Reset"> --> -->
+             <input type="reset" onClick="window.location.reload()" value="Reset"> 
             <script>
                 function myfunction(thisForm){
                     if(thisForm.backgroundcolor.value=="blue"){
@@ -105,6 +107,6 @@
                     document.getElementById("body").style.fontWeight = "bolder";
                 }
              </script>
-// <!--     </body>    
-// </html> -->
-//  -->
+         </body>    
+      </html> 
+
