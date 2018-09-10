@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
 <script>
 function showHint(str) {
     if (str.length == 0) { 
@@ -18,13 +18,13 @@ function showHint(str) {
     }
 }
 </script>    
-</head>    
-<body>    
-    <p>This webpage recreates the 'gethint' Ajax example from <a href="https://www.w3schools.com/php/php_ajax_php.asp">W3Schools</a>. The following allows the user to type in the field below for name suggestions:</p>
-        <form> 
-            First name: <input type="text" onkeyup="showHint(this.value)">
-        </form>
-<!--            Suggestions appear when uploaded-->
-    <p>Suggestions: <span id="txtHint"></span></p>
-</body>    
-</html>
+// </head>    
+// <body>    
+//     <p>This webpage recreates the 'gethint' Ajax example from <a href="https://www.w3schools.com/php/php_ajax_php.asp">W3Schools</a>. The following allows the user to type in the field below for name suggestions:</p>
+//         <form> 
+//             First name: <input type="text" onkeyup="showHint(this.value)">
+//         </form>
+// <!--            Suggestions appear when uploaded-->
+//     <p>Suggestions: <span id="txtHint"></span></p>
+// </body>    
+// </html>
