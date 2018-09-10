@@ -1,17 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>    
-<body>
-    <p id="p">'The following webpage contains:  The function celsius, that returns the Celsius equivalent of a Fahrenheit temperature, using the calculation: C = 5/9 * (F - 32), and the function fahrenheit that returns the Fahrenheit equivalent of a Celsius temperature, using the calculation: F = (9/5 * C) + 32 '.</p><br>
-        <form style="text-align: right">
-            <table>
-                <tr><td>Fahrenheit: <input type="number" id="fahrenheitone"></td></tr>
-                <tr><td><button type="button" onclick="conversionfc()">Submit</button><button type="reset">Reset</button><br></td></tr> 
-                <tr><td>Celsius: <input  type="number" id="celsiusone" readonly><br><br><br></td></tr>    
-                <tr><td>Celsius: <input type="number" id="celsiustwo"></td></tr>
-                <tr><td><button type="button" onclick="conversioncf()">Submit</button><button type="reset">Reset</button><br></td></tr>
-                <tr><td>Fahrenheit: <input type="number" id="fahrenheittwo" readonly></td></tr>
+// <!DOCTYPE html>
+// <html>
+// <head>
+// </head>    
+// <body>
+//     <p id="p">'The following webpage contains:  The function celsius, that returns the Celsius equivalent of a Fahrenheit temperature, using the calculation: C = 5/9 * (F - 32), and the function fahrenheit that returns the Fahrenheit equivalent of a Celsius temperature, using the calculation: F = (9/5 * C) + 32 '.</p><br>
+//         <form style="text-align: right">
+//             <table>
+//                 <tr><td>Fahrenheit: <input type="number" id="fahrenheitone"></td></tr>
+//                 <tr><td><button type="button" onclick="conversionfc()">Submit</button><button type="reset">Reset</button><br></td></tr> 
+//                 <tr><td>Celsius: <input  type="number" id="celsiusone" readonly><br><br><br></td></tr>    
+//                 <tr><td>Celsius: <input type="number" id="celsiustwo"></td></tr>
+//                 <tr><td><button type="button" onclick="conversioncf()">Submit</button><button type="reset">Reset</button><br></td></tr>
+//                 <tr><td>Fahrenheit: <input type="number" id="fahrenheittwo" readonly></td></tr>
             <script>
             function conversionfc(){
                 let fahrenheitone = document.getElementById("fahrenheitone").value;       
@@ -40,7 +40,7 @@
                 }
             }                 
             </script>
-            </table>
-        </form>
-    </body> 
-</html>    
+//             </table>
+//         </form>
+//     </body> 
+// </html>    
