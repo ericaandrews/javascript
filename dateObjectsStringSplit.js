@@ -1,35 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head> 
-</head>
+// <!DOCTYPE html>
+// <html>
+// <head> 
+// </head>
 
-<body onload="document.forms['myForm'].elements['input'].focus();">  
-      <form name = "myForm">
-         <table>
-            <tr><td>Enter a Phone number: </td>
-               <td><input name="input" type="text" id="input" placeholder="(999) 999-9999" autofocus>
-               </td>
-            </tr>
-            <tr><td>Area Code: </td>
-               <td><input id="areacode">
-               </td>
-            </tr>
-            <tr><td>Seven-Digit Phone Number</td>
-               <td><input id="sevendigit">
-               </td>
-            </tr>
-            <tr><td><input type="button" value="Submit" onclick="telephonenumber()"></td></tr> 
-         </table>
-         <input type="reset" value="Reset" onClick="window.location.reload();">
-      </form>
-    <form>
-     <table>
-        <tr><td id="toString"></td></tr>
-        <tr><td id="toLocaleString"></td></tr> 
-        <tr><td id="toUTCString"></td></tr>
-        <tr><td><button type="button" onclick="strings()">Click Here for new date and time</button><br><br><br></td></tr>
-        <p>Difference between UTC time and PDT Time in hours:</p><p id="timeZoneDif"></p>
-        <p>Difference between UTC time and EST Time in hours:</p><p id="timeZoneDifTwo"></p>
+// <body onload="document.forms['myForm'].elements['input'].focus();">  
+//       <form name = "myForm">
+//          <table>
+//             <tr><td>Enter a Phone number: </td>
+//                <td><input name="input" type="text" id="input" placeholder="(999) 999-9999" autofocus>
+//                </td>
+//             </tr>
+//             <tr><td>Area Code: </td>
+//                <td><input id="areacode">
+//                </td>
+//             </tr>
+//             <tr><td>Seven-Digit Phone Number</td>
+//                <td><input id="sevendigit">
+//                </td>
+//             </tr>
+//             <tr><td><input type="button" value="Submit" onclick="telephonenumber()"></td></tr> 
+//          </table>
+//          <input type="reset" value="Reset" onClick="window.location.reload();">
+//       </form>
+//     <form>
+//      <table>
+//         <tr><td id="toString"></td></tr>
+//         <tr><td id="toLocaleString"></td></tr> 
+//         <tr><td id="toUTCString"></td></tr>
+//         <tr><td><button type="button" onclick="strings()">Click Here for new date and time</button><br><br><br></td></tr>
+//         <p>Difference between UTC time and PDT Time in hours:</p><p id="timeZoneDif"></p>
+//         <p>Difference between UTC time and EST Time in hours:</p><p id="timeZoneDifTwo"></p>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script src="/path/to/jquery-input-mask-phone-number.min.js"></script>
             <script>    
@@ -88,7 +88,7 @@
                  document.getElementById("timeZoneDifTwo").innerHTML = timeZoneTwo;
                 }
             </script> 
-    </table>    
-    </form>
-</body>
-</html>
+//     </table>    
+//     </form>
+// </body>
+// </html>
