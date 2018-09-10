@@ -1,37 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>   
-</head>
-<body>
-    <div id="border">
-            <p style="text-align: center;">This webpage contains a form that displays an input text box, radio buttons, checkboxes, and select items along with a script that executes form validation.</p>
-        <div id="centered">
-            <form id="myForm" action="#" onsubmit="return myFunction(this)">
-              First name:<br><input type="text" id="fname" name="fname"><br>
-              Last name:<br><input type="text" id="lname" name="lname"><br>
-              <br>    
-              <input type="hidden" value="" name="gender">       
-              <input type="radio" value="male" name="gender">Male
-              <input type="radio" value="female" name="gender">Female
-              <input type="radio" value="decline to answer" name="gender">Decline to answer<br>
-              <br>
-              <input type="checkbox"  id="bike" value="i have a bike">I have a bike<br>
-              <input type="checkbox" id="car" value="i have a car">I have a car<br> 
-              <input type="checkbox"  id="other" value="other">Other<br>
-              <br>
-              Which browser are you most familiar with?<br>
-              <select name="browsers">   
-              <option value="none of these">None of these</option> 
-              <option value="internet explorer">Internet Explorer</option>
-              <option value="firefox">Firefox</option>
-              <option value="chrome">Chrome</option>                
-              <option value="opera">Opera</option>
-              <option value="safari">Safari</option>
-              </select>
-              <br><br>  
-              <input type="submit" value="submit">
-            </form>
-            <p id="p"></p>
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>   
+// </head>
+// <body>
+//     <div id="border">
+//             <p style="text-align: center;">This webpage contains a form that displays an input text box, radio buttons, checkboxes, and select items along with a script that executes form validation.</p>
+//         <div id="centered">
+//             <form id="myForm" action="#" onsubmit="return myFunction(this)">
+//               First name:<br><input type="text" id="fname" name="fname"><br>
+//               Last name:<br><input type="text" id="lname" name="lname"><br>
+//               <br>    
+//               <input type="hidden" value="" name="gender">       
+//               <input type="radio" value="male" name="gender">Male
+//               <input type="radio" value="female" name="gender">Female
+//               <input type="radio" value="decline to answer" name="gender">Decline to answer<br>
+//               <br>
+//               <input type="checkbox"  id="bike" value="i have a bike">I have a bike<br>
+//               <input type="checkbox" id="car" value="i have a car">I have a car<br> 
+//               <input type="checkbox"  id="other" value="other">Other<br>
+//               <br>
+//               Which browser are you most familiar with?<br>
+//               <select name="browsers">   
+//               <option value="none of these">None of these</option> 
+//               <option value="internet explorer">Internet Explorer</option>
+//               <option value="firefox">Firefox</option>
+//               <option value="chrome">Chrome</option>                
+//               <option value="opera">Opera</option>
+//               <option value="safari">Safari</option>
+//               </select>
+//               <br><br>  
+//               <input type="submit" value="submit">
+//             </form>
+//             <p id="p"></p>
             <script>
               function myFunction(thisForm) {
                 let f = document.getElementById("fname").value;
@@ -74,7 +74,7 @@
                 }     
               }       
             </script>
-        </div>
-    </div>
-</body>    
-</html>
+//         </div>
+//     </div>
+// </body>    
+// </html>
