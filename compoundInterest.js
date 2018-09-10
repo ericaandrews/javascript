@@ -1,100 +1,100 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        #column{column-count: 3;}
-        table, th, td{border: 1px solid;font-size: 8pt; margin: 0 auto; border-collapse: collapse;}
-    </style>
-</head>    
-    <body>
-        <p id="p_interest">This webpage calculates compound interest on a principal of $1000 for interest rates of 5, 6, 7, 8, 9, and 10%, for years 1 through 10.</p><br>
-            <div id="column">
-<!--
-                P = principal /the initial amount you borrow or deposit/
-                r = annual rate of interest /percentage/
-                n = number of years the amount is deposited
-                A = amount of money accumulated after n years, including interest
-                A = P(1 + r)^n /compound interest/  
--->
-            <form>    
-            <table>
-                <tr id="maroon_white_one"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
-                <tr id="yellow_one"><td>1</td><td><input id="amnt_one" readonly></td><td>0.05</td></tr>
-                <tr><td>2</td><td><input id="amnt_two" readonly></td><td>0.05</td></tr>
-                <tr id="yellow_two"><td>3</td><td><input id="amnt_three" readonly></td><td>0.05</td></tr>
-                <tr><td>4</td><td><input id="amnt_four" readonly></td><td>0.05</td></tr>
-                <tr id="yellow_three"><td>5</td><td><input id="amnt_five" readonly></td><td>0.05</td></tr>
-                <tr><td>6</td><td><input id="amnt_six" readonly></td><td>0.05</td></tr>
-                <tr id="yellow_four"><td>7</td><td><input id="amnt_seven" readonly></td><td>0.05</td></tr>
-                <tr><td>8</td><td><input id="amnt_eight" readonly></td><td>0.05</td></tr>
-                <tr id="yellow_five"><td>9</td><td><input id="amnt_nine" readonly></td><td>0.05</td></tr>
-                <tr><td>10</td><td><input id="amnt_ten" readonly></td><td>0.05</td></tr>
-            </table><br>
-            <table>
-                <tr id="maroon_white_two"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
-                <tr id="yellow_six"><td>1</td><td><input id="amnt_one_six" readonly></td><td>0.06</td></tr>
-                <tr><td>2</td><td><input id="amnt_two_six" readonly></td><td>0.06</td></tr>
-                <tr id="yellow_seven"><td>3</td><td><input id="amnt_three_six" readonly></td><td>0.06</td></tr>
-                <tr><td>4</td><td><input id="amnt_four_six" readonly></td><td>0.06</td></tr>
-                <tr id="yellow_eight"><td>5</td><td><input id="amnt_five_six" readonly></td><td>0.06</td></tr>
-                <tr><td>6</td><td><input id="amnt_six_six" readonly></td><td>0.06</td></tr>
-                <tr id="yellow_nine"><td>7</td><td><input id="amnt_seven_six" readonly></td><td>0.06</td></tr>
-                <tr><td>8</td><td><input id="amnt_eight_six" readonly></td><td>0.06</td></tr>
-                <tr id="yellow_ten"><td>9</td><td><input id="amnt_nine_six" readonly></td><td>0.06</td></tr>
-                <tr><td>10</td><td><input id="amnt_ten_six" readonly></td><td>0.06</td></tr>
-            </table><br>
-            <table>
-                <tr id="maroon_white_three"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
-                <tr id="yellow_eleven"><td>1</td><td><input id="amnt_one_seven" readonly></td><td>0.07</td></tr>
-                <tr><td>2</td><td><input id="amnt_two_seven" readonly></td><td>0.07</td></tr>
-                <tr id="yellow_twelve"><td>3</td><td><input id="amnt_three_seven" readonly></td><td>0.07</td></tr>
-                <tr><td>4</td><td><input id="amnt_four_seven" readonly></td><td>0.07</td></tr>
-                <tr id="yellow_thirteen"><td>5</td><td><input id="amnt_five_seven" readonly></td><td>0.07</td></tr>
-                <tr><td>6</td><td><input id="amnt_six_seven" readonly></td><td>0.07</td></tr>
-                <tr id="yellow_fourteen"><td>7</td><td><input id="amnt_seven_seven" readonly></td><td>0.07</td></tr>
-                <tr><td>8</td><td><input id="amnt_eight_seven" readonly></td><td>0.07</td></tr>
-                <tr id="yellow_fifteen"><td>9</td><td><input id="amnt_nine_seven" readonly></td><td>0.07</td></tr>
-                <tr><td>10</td><td><input id="amnt_ten_seven" readonly></td><td>0.07</td></tr>
-            </table><br>
-            <table>
-                <tr id="maroon_white_four"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
-                <tr id="yellow_sixteen"><td>1</td><td><input id="amnt_one_eight" readonly></td><td>0.08</td></tr>
-                <tr><td>2</td><td><input id="amnt_two_eight" readonly></td><td>0.08</td></tr>
-                <tr id="yellow_seventeen"><td>3</td><td><input id="amnt_three_eight" readonly></td><td>0.08</td></tr>
-                <tr><td>4</td><td><input id="amnt_four_eight" readonly></td><td>0.08</td></tr>
-                <tr id="yellow_eighteen"><td>5</td><td><input id="amnt_five_eight" readonly></td><td>0.08</td></tr>
-                <tr><td>6</td><td><input id="amnt_six_eight" readonly></td><td>0.08</td></tr>
-                <tr id="yellow_nineteen"><td>7</td><td><input id="amnt_seven_eight" readonly></td><td>0.08</td></tr>
-                <tr><td>8</td><td><input id="amnt_eight_eight" readonly></td><td>0.08</td></tr>
-                <tr id="yellow_twenty"><td>9</td><td><input id="amnt_nine_eight" readonly></td><td>0.08</td></tr>
-                <tr><td>10</td><td><input id="amnt_ten_eight" readonly></td><td>0.08</td></tr>
-            </table><br>
-            <table>
-                <tr id="maroon_white_five"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
-                <tr id="yellow_twenty_one"><td>1</td><td><input id="amnt_one_nine" readonly></td><td>0.09</td></tr>
-                <tr><td>2</td><td><input id="amnt_two_nine" readonly></td><td>0.09</td></tr>
-                <tr id="yellow_twenty_two"><td>3</td><td><input id="amnt_three_nine" readonly></td><td>0.09</td></tr>
-                <tr><td>4</td><td><input id="amnt_four_nine" readonly></td><td>0.09</td></tr>
-                <tr id="yellow_twenty_three"><td>5</td><td><input id="amnt_five_nine" readonly></td><td>0.09</td></tr>
-                <tr><td>6</td><td><input id="amnt_six_nine" readonly></td><td>0.09</td></tr>
-                <tr id="yellow_twenty_four"><td>7</td><td><input id="amnt_seven_nine" readonly></td><td>0.09</td></tr>
-                <tr><td>8</td><td><input id="amnt_eight_nine" readonly></td><td>0.09</td></tr>
-                <tr id="yellow_twenty_five"><td>9</td><td><input id="amnt_nine_nine" readonly></td><td>0.09</td></tr>
-                <tr><td>10</td><td><input id="amnt_ten_nine" readonly></td><td>0.09</td></tr>
-            </table><br>
-            <table>
-                <tr id="maroon_white_six"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
-                <tr id="yellow_twenty_six"><td>1</td><td><input id="amnt_one_ten" readonly></td><td>0.10</td></tr>
-                <tr><td>2</td><td><input id="amnt_two_ten" readonly></td><td>0.10</td></tr>
-                <tr id="yellow_twenty_seven"><td>3</td><td><input id="amnt_three_ten" readonly></td><td>0.10</td></tr>
-                <tr><td>4</td><td><input id="amnt_four_ten" readonly></td><td>0.10</td></tr>
-                <tr id="yellow_twenty_eight"><td>5</td><td><input id="amnt_five_ten" readonly></td><td>0.10</td></tr>
-                <tr><td>6</td><td><input id="amnt_six_ten" readonly></td><td>0.10</td></tr>
-                <tr id="yellow_twenty_nine"><td>7</td><td><input id="amnt_seven_ten" readonly></td><td>0.10</td></tr>
-                <tr><td>8</td><td><input id="amnt_eight_ten" readonly></td><td>0.10</td></tr>
-                <tr id="yellow_thirty"><td>9</td><td><input id="amnt_nine_ten" readonly></td><td>0.10</td></tr>
-                <tr><td>10</td><td><input id="amnt_ten_ten" readonly></td><td>0.10</td></tr>   
-            </table><br>
+// <!DOCTYPE html>
+// <html>
+// <head>
+//     <style>
+//         #column{column-count: 3;}
+//         table, th, td{border: 1px solid;font-size: 8pt; margin: 0 auto; border-collapse: collapse;}
+//     </style>
+// </head>    
+//     <body>
+//         <p id="p_interest">This webpage calculates compound interest on a principal of $1000 for interest rates of 5, 6, 7, 8, 9, and 10%, for years 1 through 10.</p><br>
+//             <div id="column">
+// <!--
+//                 P = principal /the initial amount you borrow or deposit/
+//                 r = annual rate of interest /percentage/
+//                 n = number of years the amount is deposited
+//                 A = amount of money accumulated after n years, including interest
+//                 A = P(1 + r)^n /compound interest/  
+// -->
+//             <form>    
+//             <table>
+//                 <tr id="maroon_white_one"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
+//                 <tr id="yellow_one"><td>1</td><td><input id="amnt_one" readonly></td><td>0.05</td></tr>
+//                 <tr><td>2</td><td><input id="amnt_two" readonly></td><td>0.05</td></tr>
+//                 <tr id="yellow_two"><td>3</td><td><input id="amnt_three" readonly></td><td>0.05</td></tr>
+//                 <tr><td>4</td><td><input id="amnt_four" readonly></td><td>0.05</td></tr>
+//                 <tr id="yellow_three"><td>5</td><td><input id="amnt_five" readonly></td><td>0.05</td></tr>
+//                 <tr><td>6</td><td><input id="amnt_six" readonly></td><td>0.05</td></tr>
+//                 <tr id="yellow_four"><td>7</td><td><input id="amnt_seven" readonly></td><td>0.05</td></tr>
+//                 <tr><td>8</td><td><input id="amnt_eight" readonly></td><td>0.05</td></tr>
+//                 <tr id="yellow_five"><td>9</td><td><input id="amnt_nine" readonly></td><td>0.05</td></tr>
+//                 <tr><td>10</td><td><input id="amnt_ten" readonly></td><td>0.05</td></tr>
+//             </table><br>
+//             <table>
+//                 <tr id="maroon_white_two"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
+//                 <tr id="yellow_six"><td>1</td><td><input id="amnt_one_six" readonly></td><td>0.06</td></tr>
+//                 <tr><td>2</td><td><input id="amnt_two_six" readonly></td><td>0.06</td></tr>
+//                 <tr id="yellow_seven"><td>3</td><td><input id="amnt_three_six" readonly></td><td>0.06</td></tr>
+//                 <tr><td>4</td><td><input id="amnt_four_six" readonly></td><td>0.06</td></tr>
+//                 <tr id="yellow_eight"><td>5</td><td><input id="amnt_five_six" readonly></td><td>0.06</td></tr>
+//                 <tr><td>6</td><td><input id="amnt_six_six" readonly></td><td>0.06</td></tr>
+//                 <tr id="yellow_nine"><td>7</td><td><input id="amnt_seven_six" readonly></td><td>0.06</td></tr>
+//                 <tr><td>8</td><td><input id="amnt_eight_six" readonly></td><td>0.06</td></tr>
+//                 <tr id="yellow_ten"><td>9</td><td><input id="amnt_nine_six" readonly></td><td>0.06</td></tr>
+//                 <tr><td>10</td><td><input id="amnt_ten_six" readonly></td><td>0.06</td></tr>
+//             </table><br>
+//             <table>
+//                 <tr id="maroon_white_three"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
+//                 <tr id="yellow_eleven"><td>1</td><td><input id="amnt_one_seven" readonly></td><td>0.07</td></tr>
+//                 <tr><td>2</td><td><input id="amnt_two_seven" readonly></td><td>0.07</td></tr>
+//                 <tr id="yellow_twelve"><td>3</td><td><input id="amnt_three_seven" readonly></td><td>0.07</td></tr>
+//                 <tr><td>4</td><td><input id="amnt_four_seven" readonly></td><td>0.07</td></tr>
+//                 <tr id="yellow_thirteen"><td>5</td><td><input id="amnt_five_seven" readonly></td><td>0.07</td></tr>
+//                 <tr><td>6</td><td><input id="amnt_six_seven" readonly></td><td>0.07</td></tr>
+//                 <tr id="yellow_fourteen"><td>7</td><td><input id="amnt_seven_seven" readonly></td><td>0.07</td></tr>
+//                 <tr><td>8</td><td><input id="amnt_eight_seven" readonly></td><td>0.07</td></tr>
+//                 <tr id="yellow_fifteen"><td>9</td><td><input id="amnt_nine_seven" readonly></td><td>0.07</td></tr>
+//                 <tr><td>10</td><td><input id="amnt_ten_seven" readonly></td><td>0.07</td></tr>
+//             </table><br>
+//             <table>
+//                 <tr id="maroon_white_four"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
+//                 <tr id="yellow_sixteen"><td>1</td><td><input id="amnt_one_eight" readonly></td><td>0.08</td></tr>
+//                 <tr><td>2</td><td><input id="amnt_two_eight" readonly></td><td>0.08</td></tr>
+//                 <tr id="yellow_seventeen"><td>3</td><td><input id="amnt_three_eight" readonly></td><td>0.08</td></tr>
+//                 <tr><td>4</td><td><input id="amnt_four_eight" readonly></td><td>0.08</td></tr>
+//                 <tr id="yellow_eighteen"><td>5</td><td><input id="amnt_five_eight" readonly></td><td>0.08</td></tr>
+//                 <tr><td>6</td><td><input id="amnt_six_eight" readonly></td><td>0.08</td></tr>
+//                 <tr id="yellow_nineteen"><td>7</td><td><input id="amnt_seven_eight" readonly></td><td>0.08</td></tr>
+//                 <tr><td>8</td><td><input id="amnt_eight_eight" readonly></td><td>0.08</td></tr>
+//                 <tr id="yellow_twenty"><td>9</td><td><input id="amnt_nine_eight" readonly></td><td>0.08</td></tr>
+//                 <tr><td>10</td><td><input id="amnt_ten_eight" readonly></td><td>0.08</td></tr>
+//             </table><br>
+//             <table>
+//                 <tr id="maroon_white_five"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
+//                 <tr id="yellow_twenty_one"><td>1</td><td><input id="amnt_one_nine" readonly></td><td>0.09</td></tr>
+//                 <tr><td>2</td><td><input id="amnt_two_nine" readonly></td><td>0.09</td></tr>
+//                 <tr id="yellow_twenty_two"><td>3</td><td><input id="amnt_three_nine" readonly></td><td>0.09</td></tr>
+//                 <tr><td>4</td><td><input id="amnt_four_nine" readonly></td><td>0.09</td></tr>
+//                 <tr id="yellow_twenty_three"><td>5</td><td><input id="amnt_five_nine" readonly></td><td>0.09</td></tr>
+//                 <tr><td>6</td><td><input id="amnt_six_nine" readonly></td><td>0.09</td></tr>
+//                 <tr id="yellow_twenty_four"><td>7</td><td><input id="amnt_seven_nine" readonly></td><td>0.09</td></tr>
+//                 <tr><td>8</td><td><input id="amnt_eight_nine" readonly></td><td>0.09</td></tr>
+//                 <tr id="yellow_twenty_five"><td>9</td><td><input id="amnt_nine_nine" readonly></td><td>0.09</td></tr>
+//                 <tr><td>10</td><td><input id="amnt_ten_nine" readonly></td><td>0.09</td></tr>
+//             </table><br>
+//             <table>
+//                 <tr id="maroon_white_six"><td>Year</td><td>Amount on deposit</td><td>Interest Rate</td></tr>
+//                 <tr id="yellow_twenty_six"><td>1</td><td><input id="amnt_one_ten" readonly></td><td>0.10</td></tr>
+//                 <tr><td>2</td><td><input id="amnt_two_ten" readonly></td><td>0.10</td></tr>
+//                 <tr id="yellow_twenty_seven"><td>3</td><td><input id="amnt_three_ten" readonly></td><td>0.10</td></tr>
+//                 <tr><td>4</td><td><input id="amnt_four_ten" readonly></td><td>0.10</td></tr>
+//                 <tr id="yellow_twenty_eight"><td>5</td><td><input id="amnt_five_ten" readonly></td><td>0.10</td></tr>
+//                 <tr><td>6</td><td><input id="amnt_six_ten" readonly></td><td>0.10</td></tr>
+//                 <tr id="yellow_twenty_nine"><td>7</td><td><input id="amnt_seven_ten" readonly></td><td>0.10</td></tr>
+//                 <tr><td>8</td><td><input id="amnt_eight_ten" readonly></td><td>0.10</td></tr>
+//                 <tr id="yellow_thirty"><td>9</td><td><input id="amnt_nine_ten" readonly></td><td>0.10</td></tr>
+//                 <tr><td>10</td><td><input id="amnt_ten_ten" readonly></td><td>0.10</td></tr>   
+//             </table><br>
                 <script>
                 let P = 1000.00;
                 let r = 0.05;
@@ -235,7 +235,7 @@
                 let A_tenYear_ten = Number(P) * Math.pow(Number(a_ten), 10);
                 document.getElementById("amnt_ten_ten").value = A_tenYear_ten.toFixed(2);
                 </script>
-            </form>
-        </div>
-    </body> 
-</html>    
+//             </form>
+//         </div>
+//     </body> 
+// </html>    
