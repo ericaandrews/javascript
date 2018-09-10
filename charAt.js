@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head> 
-</head>    
-<body>
-    <p style="text-align: center">'The following webpage contains a script using a form that allows the user to input several lines of text and a search character and uses the String method charAt to determine the number of occurrences of the search character within the text.</p><br>
-     <form style="text-align: right">    
-        <table>   
-            <tr><td>Enter text: <textarea type="" id="text"></textarea></tr>
-            <tr><td><br>Enter search character:<input type="" id="searchCharacter" style="text-align: right"></td></tr>          
-            <tr><td>Number of occurrences of search character entered:<input type="" id="numberOfOccurrences" style="text-align: right" readonly></td></tr>    
-            <tr><td><button type="button" onclick="search()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr>
+// <!DOCTYPE html>
+// <html>
+// <head> 
+// </head>    
+// <body>
+//     <p style="text-align: center">'The following webpage contains a script using a form that allows the user to input several lines of text and a search character and uses the String method charAt to determine the number of occurrences of the search character within the text.</p><br>
+//      <form style="text-align: right">    
+//         <table>   
+//             <tr><td>Enter text: <textarea type="" id="text"></textarea></tr>
+//             <tr><td><br>Enter search character:<input type="" id="searchCharacter" style="text-align: right"></td></tr>          
+//             <tr><td>Number of occurrences of search character entered:<input type="" id="numberOfOccurrences" style="text-align: right" readonly></td></tr>    
+//             <tr><td><button type="button" onclick="search()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr>
             <script>
              function search(){
                  let searchCharacter = document.getElementById("searchCharacter").value;
@@ -43,7 +43,7 @@
                 document.getElementById("numberOfOccurrences").value = counter;
              }    
             </script>
-        </table> 
-    </form>
-</body> 
-</html>    
+//         </table> 
+//     </form>
+// </body> 
+// </html>    
