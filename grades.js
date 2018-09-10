@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head> 
-</head>    
-    <body>
-        <p id="slidedown" style="text-align: center; border: solid 1px; width:100%; margin: 0 auto; padding: 5px;">Click Here</p>
-            <div id="final" style="text-align: right; border: solid 1px; width: 100%; margin: 0 auto; display: none; padding: 5px;">
-                <p id="p" style="text-align: left; font-size: 8pt; input{text-align: right;">'The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)'.<br>'Calculate the student's final average according to the formula: final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR)'.</p><br>
-                     <form style="text-align: right">
-                     <table>
-                     <tr><td>Student's Homework Average: <input type="number" id="studentshomeworkaverage"></td></tr>
-                     <tr><td>Mid-term Exam Score: <input type="number" id="midtermexamscore"></td></tr>
-                     <tr><td>Final Exam Score: <input type="number" id="finalexamscore"></td></tr>
-                     <tr><td>ACR: <input type="number" id="acr"><br><br><br></td></tr>
-                     <tr><td>Final Average: <input size="10" id="finalaverage" readonly></td></tr>
-                     <tr><td>Final Letter Grade: <input size="60" id="lettergrade" readonly></td></tr>
-                     <tr><td><button type="button" onclick="calculate()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr> 
+// <!DOCTYPE html>
+// <html>
+// <head> 
+// </head>    
+//     <body>
+//         <p id="slidedown" style="text-align: center; border: solid 1px; width:100%; margin: 0 auto; padding: 5px;">Click Here</p>
+//             <div id="final" style="text-align: right; border: solid 1px; width: 100%; margin: 0 auto; display: none; padding: 5px;">
+//                 <p id="p" style="text-align: left; font-size: 8pt; input{text-align: right;">'The following webpage contains the heading, Student Grades, and uses a script that inputs a student's homework average, mid-term exam score, final exam score, and ACR (all as integers)'.<br>'Calculate the student's final average according to the formula: final average = (.5 * hwAvg) + (.2 * midExam) + (.2 * finalExam) + (.1 * ACR)'.</p><br>
+//                      <form style="text-align: right">
+//                      <table>
+//                      <tr><td>Student's Homework Average: <input type="number" id="studentshomeworkaverage"></td></tr>
+//                      <tr><td>Mid-term Exam Score: <input type="number" id="midtermexamscore"></td></tr>
+//                      <tr><td>Final Exam Score: <input type="number" id="finalexamscore"></td></tr>
+//                      <tr><td>ACR: <input type="number" id="acr"><br><br><br></td></tr>
+//                      <tr><td>Final Average: <input size="10" id="finalaverage" readonly></td></tr>
+//                      <tr><td>Final Letter Grade: <input size="60" id="lettergrade" readonly></td></tr>
+//                      <tr><td><button type="button" onclick="calculate()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr> 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
                 <script>
                     $(document).ready(function(){
@@ -67,8 +67,8 @@
                 }
             }
             </script>
-          </table> 
-       </form>
-    </div>
-  </body> 
-</html>    
+//           </table> 
+//        </form>
+//     </div>
+//   </body> 
+// </html>    
