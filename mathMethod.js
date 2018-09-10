@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>    
-<body>
-    <p>'The following webpage contains a script that has a function that uses Math.round, Math.sqrt and Math.floor to round a floating-point number to the nearest integer, calculate the square root of a floating-point number and round it to an integer, round a floating-point number to the nearest tenths position, round a floating-point number to the nearest hunderdths position, and round a floating-point number to the nearest thousandths position.'</p><br>
-        <form style="text-align: right;"> 
-            <table>
-            <tr><td>Enter a floating-point number: <input type="number" id="float" step=""></td></tr>
-            <tr><td>Floating-point number entered: <input type="number" id="floatEnter" readonly></td></tr>
-            <tr><td>Rounded to the nearest integer: <input type="number" id="floatRounded" readonly></td></tr>
-            <tr><td>Square root rounded to an integer: <input type="number" id="floatSquared" readonly></td></tr>
-            <tr><td>Rounded to the nearest tenth: <input type="number" id="floatRoundedTenth" readonly></td></tr>
-            <tr><td>Rounded to the nearest hundredth: <input type="number" id="floatRoundedHundredth" readonly></td></tr>
-            <tr><td>Rounded to the nearest thousandth: <input type="number" id="floatRoundedThousandth" readonly></td></tr>
-            <tr><td><button type="button" onclick="math()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr>
+// <!DOCTYPE html>
+// <html>
+// <head>
+// </head>    
+// <body>
+//     <p>'The following webpage contains a script that has a function that uses Math.round, Math.sqrt and Math.floor to round a floating-point number to the nearest integer, calculate the square root of a floating-point number and round it to an integer, round a floating-point number to the nearest tenths position, round a floating-point number to the nearest hunderdths position, and round a floating-point number to the nearest thousandths position.'</p><br>
+//         <form style="text-align: right;"> 
+//             <table>
+//             <tr><td>Enter a floating-point number: <input type="number" id="float" step=""></td></tr>
+//             <tr><td>Floating-point number entered: <input type="number" id="floatEnter" readonly></td></tr>
+//             <tr><td>Rounded to the nearest integer: <input type="number" id="floatRounded" readonly></td></tr>
+//             <tr><td>Square root rounded to an integer: <input type="number" id="floatSquared" readonly></td></tr>
+//             <tr><td>Rounded to the nearest tenth: <input type="number" id="floatRoundedTenth" readonly></td></tr>
+//             <tr><td>Rounded to the nearest hundredth: <input type="number" id="floatRoundedHundredth" readonly></td></tr>
+//             <tr><td>Rounded to the nearest thousandth: <input type="number" id="floatRoundedThousandth" readonly></td></tr>
+//             <tr><td><button type="button" onclick="math()">Submit</button><button type="reset">Reset</button><br><br><br></td></tr>
             <script>
                 function math(){
                     let float = document.getElementById("float").value;
@@ -53,7 +53,7 @@
                     }    
                 }
             </script>
-        </table> 
-    </form>
-</body> 
-</html>    
+//         </table> 
+//     </form>
+// </body> 
+// </html>    
