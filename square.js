@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-</head>    
-<body>
-    <p>This webpage reads in the size of the side of a square and displays a hollow square of that size constructed of asterisks.</p><br>
-            <form>
-                Enter a number between 2 and 10 for the size of a square: <input id="asterisks" type="number" min="2" max="10"><br><br>
-                <button type="button" onclick="square()">Submit</button>
-                <button type="reset">Reset</button>
-               <br><br>    
+// <!DOCTYPE html>
+// <html>
+// <head>
+// </head>    
+// <body>
+//     <p>This webpage reads in the size of the side of a square and displays a hollow square of that size constructed of asterisks.</p><br>
+//             <form>
+//                 Enter a number between 2 and 10 for the size of a square: <input id="asterisks" type="number" min="2" max="10"><br><br>
+//                 <button type="button" onclick="square()">Submit</button>
+//                 <button type="reset">Reset</button>
+//                <br><br>    
             <script>
             function square(){
                 let size = document.getElementById("asterisks").value;
@@ -34,6 +34,6 @@
                 document.write('<span style="font-family: monospace;">Refresh the page to return to the form.</span>');    
             }
             </script>  
-        </form>
-</body> 
-</html>    
+//         </form>
+// </body> 
+// </html>    
