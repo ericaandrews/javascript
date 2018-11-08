@@ -5,34 +5,7 @@
 <meta charset="utf-8">
 <meta name="description" content="">
 <title>Title</title>
-<style>
-#chart rect{
-  fill: #4aaeea;
-}
-
-#chart text{
-  fill: white;
-  font: 10px sans-serif;
-  text-anchor: end; 
-}
-
-.axis text{
-  font: 10px sans-serif;
-}
-
-.axis path, .axis line{
-  fill: none;
-  stroke : #fff;
-}
-
-body{
-  background: #1a1a1a;
-  color : #eaeaea;
-  padding : 10px;
-}
-</style>
 -->
-    
 <script>
  window.onload = function () {
     var c = new CanvasJS.Chart("chart",
