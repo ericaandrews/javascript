@@ -1,4 +1,5 @@
-<!-- <!DOCTYPE html>
+<!--
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -40,7 +41,8 @@
 <p>This is a paragraph.</p>
 <hr/>
 </div>
- -->
+-->
+
 <script>    
 		$(document).ready(function () {
 			var c = document.getElementsByClassName("content");
@@ -58,5 +60,7 @@
 		});    
 </script>
 
-<!-- </body>    
-</html> -->
+<!--
+</body>    
+</html>
+-->
