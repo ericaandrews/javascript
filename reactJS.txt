@@ -19,54 +19,54 @@ https://reactjs133a.herokuapp.com/
 
 -Terminal:
 
- - enter command:  	cd react-app				     //'react-app' is the name of your app 'main folder'
-                                         //put the name of your apps 'main folder' after ‘cd’ if different from 'react-app'
+ - enter command:  cd react-app  //'react-app' is the name of your app 'main folder'
+   //put the name of your apps 'main folder' after ‘cd’ if different from 'react-app'
                                     
- - enter command: 		sudo npm start	      //to run the app
+ - enter command:  sudo npm start  //to run the app
 
  //local host browser will automatically open with URL
  //once you are satisfied with the current state of the app, the app can be 'built for production'
 
- -enter command: 		Ctrl + C 				        //to temporarily stop the app
- -enter command: 		sudo npm run build 	 //to compile and ‘build’ the app for production
+ -enter command:  Ctrl + C  //to temporarily stop the app
+ -enter command:  sudo npm run build  //to compile and ‘build’ the app for production
 
  //the folder ‘build’ should appear inside your app’s main folder where your files have been compiled
 
  //to deploy to ’Heroku - cloud server’:
-	- sign up for an account at ‘ Heroku.com ’
+ - sign up for an account at ‘ Heroku.com ’
  - download the ‘Heroku CLI’ at ‘ https://devcenter.heroku.com/articles/heroku-cli ‘
  	
- -enter command: 		heroku login			     //to login to ‘Heroku’ from the Terminal
+ -enter command:  heroku login  //to login to ‘Heroku’ from the Terminal
 
 //press any key to continue the login process or ‘q’ to exit
 //once the browser automatically opens, if you are logged into ‘Heroku’, select ‘Log in’
 //once ‘Logged in’ appears on the page, you can close the page and return to the Terminal
 
--enter command: 		heroku create react-app --buildpack https://github.com/mars/create-react-app-buildpack.git 
+-enter command:  heroku create react-app --buildpack https://github.com/mars/create-react-app-buildpack.git 
 //if the name ‘react-app’ is already taken, replace the ‘react-app’ with another name in the command directly above
 //if your logged into ‘Heroku’, you should see the app file name created on the front page
 //click on the app name created and select the ‘Deploy’ tab
 //under the ‘Deploy’ tab, there is a section titled ‘Deployment method’ and a selection titled ‘Github Connect to Github’
 //if you do not have a Github account, an account can be created at ‘ https://github.com/ ‘ 
 //if you do have a Github account, the section underneath ‘Deployment method’ titled ‘Connect to Github’ allows you 
-	 //to ‘search for a repository to connect to’
-	 //clicking on ‘Search’ for a ‘repo-name’ should display all your repositories on your Github account
- 	//select the ’Connect’ option to the right of a repository to be connected to Github 
+  //to ‘search for a repository to connect to’
+  //clicking on ‘Search’ for a ‘repo-name’ should display all your repositories on your Github account
+  //select the ’Connect’ option to the right of a repository to be connected to Github 
 
--enter command:	 	 git init				       //to initialize the ‘git’ repository
+-enter command:  git init  //to initialize the ‘git’ repository
 //if your having some troubles with ‘git’ on the terminal, try search engines for most frequently asked questions and ‘GitHub Help’
 
--enter command: 	 	git add .			       //to deploy the app, add all the files to git and stage them for commit
-//to unstage a file for commit, enter command:		 git reset HEAD FILENAME
+-enter command:  git add .  //to deploy the app, add all the files to git and stage them for commit
+//to unstage a file for commit, enter command:  git reset HEAD FILENAME
 
--enter command: 		git commit -m “First commit”			//to commit changes and prepare the files to be pushed to a repository
+-enter command:  git commit -m “First commit”  //to commit changes and prepare the files to be pushed to a repository
 //the “First commit” is a comment so it can be changed 	
-//to remove files and modify, enter command: 		  git reset  —soft HEAD~1			     //after, commit and add the files again
+//to remove files and modify, enter command:  git reset  —soft HEAD~1  //after, commit and add the files again
 
--enter command:		 git remote add origin https://git.heroku.com/react-app.git		  //sets the new remote
--enter command: 		git remote -v 											                                     //verifies the new remote URL
--enter command: 		git push -u origin master								                             //pushes the changes to the remote repository
+-enter command:  git remote add origin https://git.heroku.com/react-app.git  //sets the new remote
+-enter command:  git remote -v  //verifies the new remote URL
+-enter command:  git push -u origin master  //pushes the changes to the remote repository
 
-//The following is the URL to view your app:		https://react-app.herokuapp.com/
+//The following is the URL to view your app:  https://react-app.herokuapp.com/
 
 	
