@@ -6,14 +6,14 @@
 //Write a text so that whenever the viewers selects, the initial page will be shown with the list of events 
 //The texts style should be similar to a button 
 //The detail of the events will show 
- //the 'name of the event', 
- //the 'presenter', 
- //the 'summary of the event', 
- //the 'location' (room), 
- //the 'date' and 
- //'time' of the event
+ -the 'name of the event', 
+ -the 'presenter', 
+ -the 'summary of the event', 
+ -the 'location' (room), 
+ -the 'date' and 
+ -'time' of the event
 //The main color scheme requested by the company sponsoring the seminar contains the following colors: 
- //white, #2E1114, #501B1D, #64485C, #83677B, #ADADAD
+ -white, #2E1114, #501B1D, #64485C, #83677B, #ADADAD
 
 https://reactjs133a.herokuapp.com/
 
@@ -49,9 +49,9 @@ https://reactjs133a.herokuapp.com/
 //under the ‘Deploy’ tab, there is a section titled ‘Deployment method’ and a selection titled ‘Github Connect to Github’
 //if you do not have a Github account, an account can be created at ‘ https://github.com/ ‘ 
 //if you do have a Github account, the section underneath ‘Deployment method’ titled ‘Connect to Github’ allows you 
-  //to ‘search for a repository to connect to’
-  //clicking on ‘Search’ for a ‘repo-name’ should display all your repositories on your Github account
-  //select the ’Connect’ option to the right of a repository to be connected to Github 
+  -to ‘search for a repository to connect to’
+  -clicking on ‘Search’ for a ‘repo-name’ should display all your repositories on your Github account
+  -select the ’Connect’ option to the right of a repository to be connected to Github 
 
 -enter command:  git init  //to initialize the ‘git’ repository
 //if your having some troubles with ‘git’ on the terminal, try search engines for most frequently asked questions and ‘GitHub Help’
