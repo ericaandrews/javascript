@@ -15,4 +15,10 @@
 //The main color scheme requested by the company sponsoring the seminar contains the following colors: 
  //white, #2E1114, #501B1D, #64485C, #83677B, #ADADAD
 
+-Terminal: 
+ - cd 'app main folder'
+ - npm start
+ //local host browser will automatically open with URL
+ //once you are satisfied with the current state of the app, the app can be 'built for production'
+ 
 https://reactjs133a.herokuapp.com/
