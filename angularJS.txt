@@ -1,0 +1,231 @@
+//Build an app that will have the following behaviors:
+//Create at least eight different events for a conference (seminars, workshops, etc...)
+//Each seminar or workshop has the following data that the viewer can have access to: 
+//ID of the seminar or workshop
+//Name (title) of the seminar or workshop
+//Flag that indicates if its a seminar or workshop
+//Short summary describing what the seminar or workshop is about
+//Room Name or Number where the seminar or workshop will happen
+//Name of the presenter
+-Once the viewer accesses the page of the conference, 
+the title of the conference,
+the location, 
+and date range of the conference will be displayed. 
+//Present a dashboard with the name of the seminars presented in round shapes
+-If the viewer prefers, they can navigate to a page where a list of available seminars or workshops 
+at the conference will be displayed. 
+-If the viewer selects a seminar or workshop, the details
+(id, name, flag, short summary, room name or number, name of presenter) should be displayed no 
+matter if the viewer selects the seminar or workshop from the list or from the Dashboard. 
+//Use CSS or Bootstrap to style the application to present the following: 
+//The Dashboard view: each event should be presented as a circle, and
+the background color of the circle should change when the viewer hovers the event.
+//The List view: each event should be presented in a bar shape, and
+the background color should change when the viewer hovers the event.
+//The Detail view: the title and ID of the event should be presented with
+a different color and size then the rest of the details.
+//If the conference has seminars AND workshops, the background colors of the detail areas should 
+be different by applying ngStyle or ngClass directives.
+
+https://angularjs133a.herokuapp.com/certificates
+
+-Terminal:	
+
+- enter command:  cd angular-app 	//‘angular-app' is the name of your apps 'main folder'
+	//put the name of your apps 'main folder' after ‘cd’ if different from ‘angular-app'
+  
+- enter command:  sudo ng serve	  //to run the app
+	//enter the local host browser URL into address bar; the URL can be found after entering the previous command, 
+  if compiled successfully; appears as the following: ** Angular Live Development Server is listening on localhost:4200, 
+  open your browser on http://localhost:4200/ **
+	//once you are satisfied with the current state of the app, the app can be 'built for production'
+  
+-enter command:  Ctrl + C 	//to temporarily stop the app
+
+-enter command:  sudo ng build --prod --aot  	//to compile the app for production
+	//the folder ‘dist’ should appear inside your app’s main folder where your files have been compiled; 
+  inside the ‘dist’ folder, a folder with ‘angular-app’ or ’your apps main folder’ name should be present
+	//to deploy to ’Heroku - cloud server’:
+	//sign up for an account at ‘ Heroku.com ’
+  
+-enter command:  heroku login  	//to login to ‘Heroku’ from the Terminal
+	//press any key to continue the login process or ‘q’ to exit
+	//once the browser automatically opens, if you are logged into ‘Heroku’, select ‘Log in’
+	//once ‘Logged in’ appears on the page, you can close the page and return to the Terminal
+	
+	//inside your main apps folder, there is a JSON file that needs to be modified; 
+  the following is an example of the modifications: 
+	//package.json before:
+	{
+  "name": “angular-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~7.0.0",
+    "@angular/common": "~7.0.0",
+    "@angular/compiler": "~7.0.0",
+    "@angular/core": "~7.0.0",
+    "@angular/forms": "~7.0.0",
+    "@angular/http": "~7.0.0",
+    "@angular/platform-browser": "~7.0.0",
+    "@angular/platform-browser-dynamic": "~7.0.0",
+    "@angular/router": "~7.0.0",
+    "core-js": "^2.5.4",
+    "rxjs": "~6.3.3",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular/cli": "~7.0.4",
+    "@angular/compiler-cli": "~7.0.0",
+    "@angular/language-service": "~7.0.0",
+    "@types/node": "~8.9.4",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "codelyzer": "~4.5.0",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0",
+    "typescript": "~3.1.1"
+  }
+}
+
+	//package.json after: 
+	{
+  "name": “angular-app”,
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular/animations": "~7.0.0",
+    "@angular/cli": "~7.0.4",
+    "@angular/common": "~7.0.0",
+    "@angular/compiler": "~7.0.0",
+    "@angular/compiler-cli": "~7.0.0",
+    "@angular/core": "~7.0.0",
+    "@angular/forms": "~7.0.0",
+    "@angular/http": "~7.0.0",
+    "@angular/platform-browser": "~7.0.0",
+    "@angular/platform-browser-dynamic": "~7.0.0",
+    "@angular/router": "~7.0.0",
+    "core-js": "^2.5.4",
+    "express": "^4.16.4",
+    "rxjs": "~6.3.3",
+    "typescript": "~3.1.1",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular/language-service": "~7.0.0",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.5.0",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0"
+  },
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  }
+}
+
+	//make sure that the versions for ‘node’ and ‘nom’ are current
+  -enter command: sudo node -v	//displays the current version of ‘node’
+  -enter command: sudo npm -v	//displays the current version of ‘npm’
+  
+	//in the JSON file, package.json: 
+	//under “engines”: place the current version of ‘node’ and ‘npm’ in the modified JSON file, package.json; 
+  the following is an example:
+	 },
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  }
+}
+	//create a JS file, ‘server.js’:
+	//The following is an example of a JS file, ‘server.js’:
+  
+    const express = require('express'),
+    path = require('path');
+
+    const app = express();
+
+    app.use(express.static('./dist/angular-app’));
+
+    app.get('/*', (req,res)=>{
+
+    res.sendFile(path.join(__dirname,'/dist/angular-app/index.html'));
+
+    });  
+
+    app.listen(process.env.PORT || 8080, ()=>{
+    console.log('Server started');
+    })
+    
+	//make sure to correct the app name is the JS file, ‘server.js’,  
+  if different from ’angular-app’
+  
+  -enter command: sudo npm i -s express	  //to install express
+  
+  -enter command: sudo git init  	//to initialize the git repository
+	//if your having some troubles with ‘git’ on the terminal, 
+  try search engines for most frequently asked questions and ‘GitHub Help’
+	
+	//create an app on Heroku:
+	//if logged in to Heroku, select ’New’ located at the top right corner; select ‘create new app’ 
+	// if there is trouble accepting a name, leave the ‘App name’ input blank and select ‘Create app’; 
+  a name will be generated automatically; 
+  return to the main page where the app should be displayed; 
+	//select the app created on Heroku:
+	//select the tab ‘Deploy’ and scroll to ‘Deploy using Heroku Git’:
+	//under ‘Create a new Git repository’, copy ‘$ heroku git:remote -a angular-app’; 
+  the app name ‘angular-app’ will be the app name created 
+	//cd into or remain in the main app folder on the terminal
+  
+-enter command: sudo heroku git:remote -a angular-app	  //to initialize a git repository in a directory
+
+-enter command:  git add .  	//to deploy the app, add all the files to git and stage them for commit
+	//to unstage a file for commit, enter command: sudo git reset HEAD FILENAME
+  
+-enter command:  sudo git commit -am "make it better"	  //to commit code to the repository
+	//the “make it better” is a comment so it can be changed
+	//to remove files and modify, enter command:  sudo git reset  —soft HEAD~1 
+	//after, commit and add the files again
+  
+-enter command: sudo git push heroku master	  //deploy code to Heroku by Git
+	//The following is the URL to view your app:  
+    https://angular-app.herokuapp.com/; 
+    the URL to view  your app should appear above ‘remote:  Verifying deploy… done.’ on the Terminal.
