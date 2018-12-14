@@ -2,18 +2,18 @@
 //Show a list of events coming from a 'JSON' file
 //The 'list' will show 'event IDs' and 'event Names'
 //If the viewer clicks on an event, the detail of that event will be presented
-//There should be ten events presented
+//There should be at least ten events presented
 //Write a text so that whenever the viewers selects, the initial page will be shown with the list of events 
 //The texts style should be similar to a button 
 //The detail of the events will show 
- -the 'name of the event', 
- -the 'presenter', 
- -the 'summary of the event', 
- -the 'location' (room), 
- -the 'date' and 
- -'time' of the event
+	-the 'name of the event', 
+	-the 'presenter', 
+	-the 'summary of the event', 
+	-the 'location' (room), 
+	-the 'date' and 
+	-'time' of the event
 //The main color scheme requested by the company sponsoring the seminar contains the following colors: 
- -white, #2E1114, #501B1D, #64485C, #83677B, #ADADAD
+	-white, #2E1114, #501B1D, #64485C, #83677B, #ADADAD
 
 https://reactjs133a.herokuapp.com/
 
