@@ -1,29 +1,29 @@
 //Build an app that will have the following behaviors:
-//Create at least eight different events for a conference (seminars, workshops, etc...)
-//Each seminar or workshop has the following data that the viewer can have access to: 
-//ID of the seminar or workshop
-//Name (title) of the seminar or workshop
-//Flag that indicates if its a seminar or workshop
-//Short summary describing what the seminar or workshop is about
-//Room Name or Number where the seminar or workshop will happen
-//Name of the presenter
--Once the viewer accesses the page of the conference, 
-the title of the conference,
-the location, 
-and date range of the conference will be displayed. 
+//Create at least eight different events for a conference (seminars or workshops)
+//Each seminar or workshop has the following data that the viewer should have access to: 
+	//ID of the seminar or workshop
+	//Name (title) of the seminar or workshop
+	//Flag that indicates if its a seminar or workshop
+	//Short summary describing what the seminar or workshop is about
+	//Room Name or Number where the seminar or workshop will happen
+	//Name of the presenter
+	-Once the viewer accesses the page of the conference, the following will be displayed:
+		-the title of the conference
+		-the location 
+		-date range of the conference 
 //Present a dashboard with the name of the seminars presented in round shapes
--If the viewer prefers, they can navigate to a page where a list of available seminars or workshops 
-at the conference will be displayed. 
--If the viewer selects a seminar or workshop, the details
-(id, name, flag, short summary, room name or number, name of presenter) should be displayed no 
-matter if the viewer selects the seminar or workshop from the list or from the Dashboard. 
+	-If the viewer prefers, they can navigate to a page where a list of available seminars or workshops 
+	at the conference will be displayed. 
+	-If the viewer selects a seminar or workshop, the details
+	(id, name, flag, short summary, room name or number, name of presenter) should be displayed no 
+	matter if the viewer selects the seminar or workshop from the list or from the Dashboard. 
 //Use CSS or Bootstrap to style the application to present the following: 
-//The Dashboard view: each event should be presented as a circle, and
-the background color of the circle should change when the viewer hovers the event.
-//The List view: each event should be presented in a bar shape, and
-the background color should change when the viewer hovers the event.
-//The Detail view: the title and ID of the event should be presented with
-a different color and size then the rest of the details.
+	//The Dashboard view: each event should be presented as a circle, and
+	the background color of the circle should change when the viewer hovers the event.
+	//The List view: each event should be presented in a bar shape, and
+	the background color should change when the viewer hovers the event.
+	//The Detail view: the title and ID of the event should be presented with
+	a different color and size then the rest of the details.
 //If the conference has seminars AND workshops, the background colors of the detail areas should 
 be different by applying ngStyle or ngClass directives.
 
