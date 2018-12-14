@@ -47,7 +47,8 @@ https://angularjs133a.herokuapp.com/certificates
   	inside the ‘dist’ folder, a folder with ‘angular-app’ or ’your apps main folder’ name should be present
 	//to deploy to ’Heroku - cloud server’:
 	//sign up for an account at ‘Heroku.com’
-  
+  	//download the ‘Heroku CLI’ at ‘ https://devcenter.heroku.com/articles/heroku-cli ‘
+	
 -enter command:  heroku login  	//to login to ‘Heroku’ from the Terminal
 	//press any key to continue the login process or ‘q’ to exit
 	//once the browser automatically opens, if you are logged into ‘Heroku’, select ‘Log in’
@@ -232,8 +233,6 @@ https://angularjs133a.herokuapp.com/certificates
   
   -enter command: sudo git push heroku master	  //deploy code to Heroku by Git
 	
-	//The following is the URL to view your app:  
-	    https://angular-app.herokuapp.com/; 
-	    the URL to view your app should appear above 
-	    ‘remote:  Verifying deploy… done.’ 
-	    on the Terminal.
+  //The following is the URL to view your app: https://angular-app.herokuapp.com/
+  //The URL to view your app should appear above the following in the Terminal: 
+  ‘remote:  Verifying deploy… done.’ 
