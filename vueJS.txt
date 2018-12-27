@@ -37,7 +37,8 @@ https://vuejs133atesting.herokuapp.com/#/
  //to run the app
  //enter the local host browser URL into address bar; 
  the URL can be found after entering the previous command, if compiled successfully; 
- appears as the following: App running at: Local:   http://localhost:8080/ 
+ appears as the following: 
+ App running at: Local:   http://localhost:8080/ 
  
  //once you are satisfied with the current state of the app, the app can be 'built for production'
 
@@ -186,7 +187,7 @@ https://vuejs133atesting.herokuapp.com/#/
  //create an app on Heroku:
  //if logged in to Heroku, select ’New’ located at the top right corner; 
   select ‘create new app’ 
- // if there is trouble accepting a name, leave the ‘App name’ input blank and select ‘Create app’; 
+ //if there is trouble accepting a name, leave the ‘App name’ input blank and select ‘Create app’; 
   a name will be generated automatically; return to the main page where the app should be displayed 
  //select the app created on Heroku:
  //select the tab ‘Deploy’ and scroll to ‘Deploy using Heroku Git’:
@@ -212,6 +213,6 @@ https://vuejs133atesting.herokuapp.com/#/
  //deploy code to Heroku by Git; remember to change the app name, 
  ‘vue-app’ within the command if different
  //The following is the URL to view your app:  https://vue-app.herokuapp.com/; 
- the URL to view  your app should appear above the following: 
+ the URL to view your app should appear above the following: 
  …. ‘remote:  Verifying deploy… done.’ …. on the Terminal.
 	
