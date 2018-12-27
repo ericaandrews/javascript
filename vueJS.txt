@@ -1,4 +1,4 @@
-//Build a basic note application with Vue JS:
+//Build a basic 'note application' with Vue JS:
 
 https://vuejs133a.herokuapp.com/#/
 https://vuejs133atesting.herokuapp.com/#/
@@ -27,7 +27,8 @@ https://vuejs133atesting.herokuapp.com/#/
  //to return to your apps main folder
 
 -enter command: sudo vue create vue-proj	
- //to create a new vue project; press enter to accept the defaults of the prompt 
+ //to create a new vue project; 
+ press enter to accept the defaults of the prompt 
 
 -enter command: cd vue-proj	
  //to enter the ‘vue-proj’ folder inside your apps main folder
@@ -37,12 +38,14 @@ https://vuejs133atesting.herokuapp.com/#/
  //enter the local host browser URL into address bar; 
  the URL can be found after entering the previous command, if compiled successfully; 
  appears as the following: App running at: Local:   http://localhost:8080/ 
+ 
  //once you are satisfied with the current state of the app, the app can be 'built for production'
 
 -enter command:  Ctrl + C 	
  //to temporarily stop the app
- //to deploy to ’Heroku - cloud server’:
- //sign up for an account at ‘ Heroku.com ’
+ 
+ //to deploy to ’Heroku - cloud server’;
+ sign up for an account at ‘ Heroku.com ’
 
 -enter command:  heroku login  	
  //to login to ‘Heroku’ from the Terminal
