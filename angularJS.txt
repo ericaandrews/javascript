@@ -31,25 +31,30 @@ https://angularjs133a.herokuapp.com/certificates
 
 -Terminal:	
 
-- enter command:  cd angular-app 	//‘angular-app' is the name of your apps 'main folder'
+- enter command:  cd angular-app 	
+	//‘angular-app' is the name of your apps 'main folder'
 	//put the name of your apps 'main folder' after ‘cd’ if different from ‘angular-app'
   
-- enter command:  sudo ng serve	  //to run the app
+- enter command:  sudo ng serve	  
+	//to run the app
 	//enter the local host browser URL into address bar; the URL can be found after entering the previous command, 
   if compiled successfully; appears as the following: ** Angular Live Development Server is listening on localhost:4200, 
   open your browser on http://localhost:4200/ **
 	//once you are satisfied with the current state of the app, the app can be 'built for production'
   
--enter command:  Ctrl + C 	//to temporarily stop the app
+-enter command:  Ctrl + C 	
+	//to temporarily stop the app
 
--enter command:  sudo ng build --prod --aot  	//to compile the app for production
+-enter command:  sudo ng build --prod --aot  	
+	//to compile the app for production
 	//the folder ‘dist’ should appear inside your app’s main folder where your files have been compiled; 
   	inside the ‘dist’ folder, a folder with ‘angular-app’ or ’your apps main folder’ name should be present
 	//to deploy to ’Heroku - cloud server’:
 	//sign up for an account at ‘Heroku.com’
   	//download the ‘Heroku CLI’ at ‘ https://devcenter.heroku.com/articles/heroku-cli ‘
 	
--enter command:  heroku login  	//to login to ‘Heroku’ from the Terminal
+-enter command:  heroku login  
+	//to login to ‘Heroku’ from the Terminal
 	//press any key to continue the login process or ‘q’ to exit
 	//once the browser automatically opens, if you are logged into ‘Heroku’, select ‘Log in’
 	//once ‘Logged in’ appears on the page, you can close the page and return to the Terminal
@@ -166,8 +171,10 @@ https://angularjs133a.herokuapp.com/certificates
 
   	//make sure that the versions for ‘node’ and ‘npm’ are current
 	
-  -enter command: sudo node -v	//displays the current version of ‘node’
-  -enter command: sudo npm -v	//displays the current version of ‘npm’
+  -enter command: sudo node -v	
+  	//displays the current version of ‘node’
+  -enter command: sudo npm -v	
+  	//displays the current version of ‘npm’
   
 	//in the JSON file, package.json: 
 	//under “engines”: place the current version of ‘node’ and ‘npm’ in the modified JSON file, package.json; 
@@ -202,9 +209,11 @@ https://angularjs133a.herokuapp.com/certificates
 	//make sure to correct the app name is the JS file, ‘server.js’,  
   	if different from ’angular-app’
   
-  -enter command: sudo npm i -s express	  //to install express
+  -enter command: sudo npm i -s express	  
+  	//to install express
   
-  -enter command: sudo git init  	//to initialize the git repository
+  -enter command: sudo git init  	
+  	//to initialize the git repository
 	//if your having some troubles with ‘git’ on the terminal, 
   	try search engines for most frequently asked questions and ‘GitHub Help’
 	
@@ -221,17 +230,21 @@ https://angularjs133a.herokuapp.com/certificates
 	
 	//cd into or remain in the main app folder on the Terminal
   
-  -enter command: sudo heroku git:remote -a angular-app	  //to initialize a git repository in a directory
+  -enter command: sudo heroku git:remote -a angular-app	  
+  	//to initialize a git repository in a directory
 
-  -enter command:  git add .  	//to deploy the app, add all the files to git and stage them for commit
+  -enter command:  git add .  	
+  	//to deploy the app, add all the files to git and stage them for commit
 	//to unstage a file for commit, enter command: sudo git reset HEAD FILENAME
   
-  -enter command: sudo git commit -am "make it better"	  //to commit code to the repository
+  -enter command: sudo git commit -am "make it better"	  
+  	//to commit code to the repository
 	//the “make it better” is a comment and can be changed
 	//to remove files and modify, enter command:  sudo git reset  —soft HEAD~1 
 	//after, commit and add the files again
   
-  -enter command: sudo git push heroku master	  //deploy code to Heroku by Git
+  -enter command: sudo git push heroku master	  
+  	//deploy code to Heroku by Git
 	
   //The following is the URL to view your app: https://angular-app.herokuapp.com/
   //The URL to view your app should appear above the following in the Terminal: 
