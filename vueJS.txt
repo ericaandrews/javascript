@@ -1,0 +1,214 @@
+//Build a basic note application with Vue JS:
+
+https://vuejs133a.herokuapp.com/#/
+https://vuejs133atesting.herokuapp.com/#/
+
+-Terminal:	
+
+- enter command:  mkdir vue-app && cd vue-app	
+  //to create and enter your apps 'main folder'
+  //put the name of your apps 'main folder' after ‘mkdir’ and ‘cd’ if different from ‘vue-app'
+
+-enter command: sudo npm init -y	
+ //creates a ‘package.json’ file inside main app folder; 
+ ‘-y’ will enter ‘y answers’ by default toward the prompted questions; 
+ enter ‘sudo npm init’ to enter answers in the prompt
+
+-enter command: sudo npm install vue --save	
+ //to install vue
+
+-enter command: cd ../	
+ //to cd outside of your apps main folder
+
+-enter command: sudo npm install -g @vue/cli	
+ //install vue with vue cli
+
+-enter command: cd vue-app	
+ //to return to your apps main folder
+
+-enter command: sudo vue create vue-proj	
+ //to create a new vue project; press enter to accept the defaults of the prompt 
+
+-enter command: cd vue-proj	
+ //to enter the ‘vue-proj’ folder inside your apps main folder
+
+-enter command:  sudo npm run serve	
+ //to run the app
+ //enter the local host browser URL into address bar; 
+ the URL can be found after entering the previous command, if compiled successfully; 
+ appears as the following: App running at: Local:   http://localhost:8080/ 
+ //once you are satisfied with the current state of the app, the app can be 'built for production'
+
+-enter command:  Ctrl + C 	
+ //to temporarily stop the app
+ //to deploy to ’Heroku - cloud server’:
+ //sign up for an account at ‘ Heroku.com ’
+
+-enter command:  heroku login  	
+ //to login to ‘Heroku’ from the Terminal
+ //press any key to continue the login process or ‘q’ to exit
+ //once the browser automatically opens, if you are logged into ‘Heroku’, select ‘Log in’
+ //once ‘Logged in’ appears on the page, you can close the page and return to the Terminal
+	
+ //inside your main apps folder, there is a JSON file that needs to be modified; 
+ the following is an example of the modifications: 
+	
+//package.json before:
+ {
+    "name": "vue-proj",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+      "vue": "^2.5.17"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "^3.2.0",
+      "@vue/cli-plugin-eslint": "^3.2.0",
+      "@vue/cli-service": "^3.2.0",
+      "babel-eslint": "^10.0.1",
+      "eslint": "^5.8.0",
+      "eslint-plugin-vue": "^5.0.0-0",
+      "vue-template-compiler": "^2.5.17"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+      ],
+      "rules": {},
+      "parserOptions": {
+        "parser": "babel-eslint"
+      }
+    },
+    "postcss": {
+      "plugins": {
+        "autoprefixer": {}
+      }
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ]
+  }
+	
+//package.json after: 
+ {
+    "name": "vue-proj",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build",
+      "lint": "vue-cli-service lint",
+      "start": "node server.js",
+      "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
+    },
+    "dependencies": {
+      "e": "0.0.4",
+      "express": "^4.16.4",
+      "vee-validate": "^2.1.4",
+      "vue": "^2.5.21",
+      "vue-router": "^3.0.2"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "^3.2.0",
+      "@vue/cli-plugin-eslint": "^3.2.0",
+      "@vue/cli-service": "^3.2.0",
+      "babel-eslint": "^10.0.1",
+      "eslint": "^5.8.0",
+      "eslint-plugin-vue": "^5.0.0-0",
+      "vue-template-compiler": "^2.5.17"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "eslint:recommended"
+      ],
+      "rules": {},
+      "parserOptions": {
+        "parser": "babel-eslint"
+      }
+    },
+    "postcss": {
+      "plugins": {
+        "autoprefixer": {}
+      }
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ]
+  }
+	
+ //create a JS file, ‘server.js’:
+ //The following is an example of a JS file, ‘server.js’:
+    var express = require('express');
+    var path = require('path');
+    var serveStatic = require('serve-static');
+    app = express();
+    app.use(serveStatic(__dirname + "/dist"));
+    var port = process.env.PORT || 5000;
+    app.listen(port);
+    console.log('server started '+ port);
+
+-enter command:  sudo npm run build 	
+ //to compile the app for production
+ //the folder ‘dist’ should appear inside your app’s main folder where your files have been compiled; 
+ inside the ‘dist’ folder, a ‘index.html’ file, a ‘favicon.ico’ file, 
+ along with a ‘css’ folder and ‘js’ folder should be present
+
+-enter command: sudo npm i -s express	
+ //to install express
+
+-enter command: sudo git init  	
+ //to initialize the git repository
+ //if your having some troubles with ‘git’ on the terminal, 
+  try search engines for most frequently asked questions and ‘GitHub Help’
+	
+ //create an app on Heroku:
+ //if logged in to Heroku, select ’New’ located at the top right corner; 
+  select ‘create new app’ 
+ // if there is trouble accepting a name, leave the ‘App name’ input blank and select ‘Create app’; 
+  a name will be generated automatically; return to the main page where the app should be displayed 
+ //select the app created on Heroku:
+ //select the tab ‘Deploy’ and scroll to ‘Deploy using Heroku Git’:
+ //under ‘Create a new Git repository’, copy ‘$ heroku git:remote -a vue-app’; 
+  the app name ‘vue-app’ will be the app name created; 
+  the name will appear different if not the same 
+ //cd into or remain in the main app folder, ‘vue-app’, on the terminal
+
+-enter command: sudo heroku git:remote -a vue-app	
+ //to initialize a git repository in a directory
+
+-enter command:  git add .  	
+ //to deploy the app, add all the files to git and stage them for commit
+ //to unstage a file for commit, enter command: sudo git reset HEAD FILENAME
+
+-enter command:  sudo git commit -am "make it better"	
+ //to commit code to the repository
+ //the “make it better” is a comment so it can be changed
+ //to remove files and modify, enter command:  sudo git reset  —soft HEAD~1 
+ //after, commit and add the files again
+
+-enter command: sudo git push heroku master	
+ //deploy code to Heroku by Git; remember to change the app name, 
+ ‘vue-app’ within the command if different
+ //The following is the URL to view your app:  https://vue-app.herokuapp.com/; 
+ the URL to view  your app should appear above the following: 
+ …. ‘remote:  Verifying deploy… done.’ …. on the Terminal.
+	
