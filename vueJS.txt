@@ -210,8 +210,7 @@ https://vuejs133atesting.herokuapp.com/#/
  //after, commit and add the files again
 
 -enter command: sudo git push heroku master	
- //deploy code to Heroku by Git; remember to change the app name, 
- ‘vue-app’ within the command if different
+ //deploy code to Heroku by Git
  //The following is the URL to view your app:  https://vue-app.herokuapp.com/; 
  the URL to view your app should appear above the following: 
  …. ‘remote:  Verifying deploy… done.’ …. on the Terminal.
