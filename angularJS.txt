@@ -38,8 +38,8 @@ https://angularjs133a.herokuapp.com/certificates
 - enter command:  sudo ng serve	  
 	//to run the app
 	//enter the local host browser URL into address bar; the URL can be found after entering the previous command, 
-  if compiled successfully; appears as the following: ** Angular Live Development Server is listening on localhost:4200, 
-  open your browser on http://localhost:4200/ **
+  	if compiled successfully; appears as the following: ** Angular Live Development Server is listening on localhost:4200, 
+  	open your browser on http://localhost:4200/ **
 	//once you are satisfied with the current state of the app, the app can be 'built for production'
   
 -enter command:  Ctrl + C 	
