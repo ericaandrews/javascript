@@ -1,3 +1,5 @@
+//https://angularjs133a.herokuapp.com/dashboard to view app 
+
 //Build an app that will have the following behaviors:
 //Create at least eight different events for a conference (seminars or workshops)
 //Each seminar or workshop has the following data that the viewer should have access to: 
