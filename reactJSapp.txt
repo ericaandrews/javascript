@@ -1,3 +1,5 @@
+//https://reactjs133a.herokuapp.com to view app 
+
 //Build an app that will have the following behaviors:
 //Show a list of events coming from a 'JSON' file
 //The 'list' will show 'event IDs' and 'event Names'
