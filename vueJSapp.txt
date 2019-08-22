@@ -1,7 +1,7 @@
-//Build a basic 'note application' with Vue JS:
+//https://vuejs133a.herokuapp.com/#/ to view app 
+//https://vuejs133atesting.herokuapp.com/#/ to view app 
 
-https://vuejs133a.herokuapp.com/#/
-https://vuejs133atesting.herokuapp.com/#/
+//Build a basic 'note application' with Vue JS:
 
 -Terminal:	
 
