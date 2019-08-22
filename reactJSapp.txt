@@ -82,5 +82,3 @@ https://reactjs133a.herokuapp.com/
 	//pushes the changes to the remote repository
 
 //The following is the URL to view your app:  https://react-app.herokuapp.com/
-
-	
